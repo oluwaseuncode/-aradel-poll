@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="index-container">
+        <h1>Welcome, {{ username }}</h1>
+        <h2>Available Polls</h2>
+        {% if polls.empty %}
+            <p class="no-polls">No polls available.</p>
+        {% else %}
+            <ul class="polls-list">
+                {% for poll_id, poll in polls.iterrows() %}
+                    <li>
+                        <a href="/polls/{{ poll_id }}" class="poll-link">{{ poll['poll'] }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <!-- Link to Create New Poll -->
+        <a href="{{ url_for('create_poll') }}" class="create-poll-button">Create New Poll</a>
+        <!-- Logout Button -->
+        <form action="{{ url_for('logout') }}" method="post" class="logout-form">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

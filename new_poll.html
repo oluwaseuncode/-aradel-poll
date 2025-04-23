@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Poll</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h3>Create New Poll</h3>
+        <form action="{{ url_for('create_poll') }}" method="POST">
+            <label for="poll">Poll Name:</label>
+            <input type="text" id="poll" name="poll" required><br><br>
+
+            <div class="options-container">
+                {% for i in range(1, 43) %}
+                    <div class="option-group">
+                        <label for="option{{ i }}">Option {{ i }}:</label>
+                        <input type="text" id="option{{ i }}" name="option{{ i }}">
+                    </div>
+                {% endfor %}
+            </div>
+
+            <input type="submit" value="Create Poll" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 600px; /* Increased width for more space */
+    text-align: center;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-height: 90vh; /* Limit height to 90% of the viewport */
+}
+
+/* Index container styling */
+.index-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 400px; /* Fixed width for the container */
+    text-align: center;
+}
+
+/* Poll container styling */
+.poll-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 400px; /* Fixed width for the container */
+    text-align: center;
+}
+
+/* Logo styling */
+img.logo {
+    display: block;
+    margin: 0 auto 20px; /* Center the logo and add spacing below */
+    width: 150px; /* Same size as the login page */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding for better usability */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+}
+
+/* Options container styling */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px 30px; /* Horizontal and vertical spacing */
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Option group styling */
+.option-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add vertical space between option groups */
+}
+
+/* Input fields styling */
+input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px;
+}
+
+/* Submit button */
+button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Increased padding for larger button */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px;
+    width: 100%; /* Full width */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Heading styling */
+h3 {
+    font-size: 24px;
+    color: #007bff; /* Blue color for the poll title */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #007bff; /* Blue color for the username */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* No polls message styling */
+.no-polls {
+    font-size: 16px;
+    color: #666; /* Gray color for the message */
+}
+
+/* Polls list styling */
+.polls-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.polls-list li {
+    margin-bottom: 10px;
+}
+
+.poll-link {
+    text-decoration: none;
+    color: #007bff; /* Blue link color */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.poll-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Logout button styling */
+.logout-form {
+    margin-top: 20px;
+}
+
+.logout-button {
+    background-color: #dc3545; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Button-like links for voting */
+a.vote-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Increased padding for bigger buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+}
+
+a.vote-link:hover {
+    background-color: #c57556;
+}
+
+/* Back link styling */
+a[href="{{ url_for('index') }}"] {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px; /* Increased font size */
+}
+
+/* Additional spacing for poll actions */
+p a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Footer links styling */
+p a:last-child {
+    margin-right: 0;
+}
+
+/* Logo styling */
+img {
+    display: block;
+    margin: 0 auto; /* Center the logo */
+    width: 300px; /* Slightly increased width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.create-poll-button {
+    display: inline-block;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.create-poll-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Vote button styling */
+.vote-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px;
+}
+
+.vote-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+}
